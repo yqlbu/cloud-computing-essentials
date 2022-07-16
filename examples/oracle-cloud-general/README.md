@@ -34,6 +34,26 @@ sudo netfilter-persistent save
 
 ## Scripts
 
+<details><summary>BBR Script</summary>
+
+</br>
+
+```bash
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+```
+
+</details>
+
+<details><summary>V2ray Agent Installation</summary>
+
+</br>
+
+```bash
+wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+```
+
+</details>
+
 <details><summary>Enable SSH with Password</summary>
 
 </br>
@@ -54,7 +74,7 @@ sudo service sshd restart
 </br>
 
 ```bash
-curl -so- 86.re/bench.sh | bash
+wget -qO- bench.sh | bash
 
 # OR (CN)
 
